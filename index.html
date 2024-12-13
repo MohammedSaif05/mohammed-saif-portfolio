@@ -28,9 +28,18 @@
                 <a href="#home" class="active">Home</a>
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
                 <a href="#services">Services</a>
                 <a href="#contact">Contact</a>
-                <button id="theme-toggle">
+                <div class="theme-toggle-wrapper">
+                    <button id="theme-toggle">
+                        <i class="ri-moon-line"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Add mobile theme toggle -->
+            <div class="mobile-theme-toggle">
+                <button id="mobile-theme-toggle">
                     <i class="ri-moon-line"></i>
                 </button>
             </div>
@@ -40,7 +49,7 @@
                 <span></span>
             </div>
         </div>
-    </nav>
+    </nav>    
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -55,8 +64,10 @@
                 </p>
                 <div class="hero-buttons">
                     <a href="#contact" class="primary-btn">Get In Touch</a>
-                    <a href="#" class="secondary-btn">Download CV</a>
-                </div>
+                    <a href="/img/Mohammed_Saif_CV.pdf" download="Mohammed_Saif_CV.pdf" class="secondary-btn">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>                
             </div>
             <div class="hero-image">
                 <img src="/img/saif-profile.jpg" alt="Mohammed Saif" class="profile-img">
@@ -70,7 +81,7 @@
             <h2 class="section-title" data-aos="fade-up">About Me</h2>
             <div class="about-content">
                 <div class="about-text" data-aos="fade-right">
-                    <p>I'm a passionate web developer and designer with experience in creating user-friendly and responsive websites. Currently pursuing B.E (CSE) at Adhiyamaan College of Engineering.</p>
+                    <p>I'm a passionate web developer and designer with experience in creating user-friendly and responsive websites. Currently pursuing B.E (CSE) 2nd Year at Adhiyamaan College of Engineering (Hosur).</p>
                     <div class="about-details">
                         <div class="detail-item">
                             <i class="ri-user-line"></i>
@@ -86,8 +97,28 @@
                                 <p>pianist.saif05@gmail.com</p>
                             </div>
                         </div>
-                        <!-- Add more details -->
-                    </div>
+                        <div class="detail-item">
+                            <i class="fas fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Profession</h4>
+                                <p>College Student</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="ri-phone-line"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 8148387156</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="ri-briefcase-line"></i>
+                            <div>
+                                <h4>Freelance</h4>
+                                <p><span class="status available">Available</span></p>
+                            </div>
+                        </div>
+                    </div>                    
                 </div>
                 <div class="about-stats" data-aos="fade-left">
                     <div class="stat-card">
@@ -99,7 +130,7 @@
                         <p>Happy Clients</p>
                     </div>
                     <div class="stat-card">
-                        <h3>5+</h3>
+                        <h3>10+</h3>
                         <p>Projects Complete</p>
                     </div>
                 </div>
@@ -108,36 +139,178 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="section-container">
-            <h2 class="section-title" data-aos="fade-up">My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card" data-aos="zoom-in">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML5</h3>
-                    <div class="skill-level">
-                        <div class="progress" style="width: 95%"></div>
+<section id="skills" class="skills">
+    <div class="section-container">
+        <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <div class="skill-level">
+                    <div class="progress" style="width: 95%"></div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS</h3>
+                <div class="skill-level">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <div class="skill-level">
+                    <div class="progress" style="width: 85%"></div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fas fa-fire"></i>
+                <h3>Firebase</h3>
+                <div class="skill-level">
+                    <div class="progress" style="width: 75%"></div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fab fa-bootstrap"></i>
+                <h3>Bootstrap</h3>
+                <div class="skill-level">
+                    <div class="progress" style="width: 80%"></div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fas fa-file-word"></i>
+                <h3>Microsoft Office</h3>
+                <div class="skill-level">
+                    <div class="progress" style="width: 85%"></div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fas fa-code"></i>
+                <h3>C Programming</h3>
+                <div class="skill-level">
+                    <div class="progress" style="width: 70%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <div class="section-container">
+        <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-image">
+                    <img src="/img/projects/AC-vision.jpg" alt="AC Vision Project">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/MohammedSaif05/AC-vision" target="_blank"><i class="ri-github-line"></i></a>
+                            <a href="#" target="_blank"><i class="ri-external-link-line"></i></a>
+                        </div>
                     </div>
                 </div>
-                <!-- Add more skill cards -->
+                <div class="project-content">
+                    <h3>AC Vision - Cable & Satellite Management System</h3>
+                    <p>A comprehensive mobile application designed for cable and satellite service providers, 
+                    featuring advanced customer management, automated billing, and integrated communication systems. 
+                    The app streamlines operations and enhances customer service through innovative solutions.</p>
+                    
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>🔹 Secure admin authentication using Firebase</li>
+                            <li>🔹 Comprehensive customer database management</li>
+                            <li>🔹 Automated balance tracking and payment history</li>
+                            <li>🔹 Integrated WhatsApp & SMS notifications</li>
+                            <li>🔹 Dynamic service plan management</li>
+                        </ul>
+                    </div>
+            
+                    <div class="project-tags">
+                        <span>Mobile App</span>
+                        <span>Firebase</span>
+                        <span>Kotlin</span>
+                        <span>Java</span>
+                        <span>Material Design</span>
+                        <span>REST API</span>
+                    </div>
+                </div>
             </div>
+            
+            <!-- Add more project cards as needed -->
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="section-container">
-            <h2 class="section-title" data-aos="fade-up">Services</h2>
-            <div class="services-grid">
-                <div class="service-card" data-aos="fade-up">
+<section id="services" class="services">
+    <div class="section-container">
+        <h2 class="section-title" data-aos="fade-up">Services</h2>
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-icon">
                     <i class="ri-code-line"></i>
-                    <h3>Web Development</h3>
-                    <p>Creating responsive and dynamic websites using modern technologies.</p>
                 </div>
-                <!-- Add more service cards -->
+                <h3>Web Development</h3>
+                <p>Creating responsive and dynamic websites using modern technologies and frameworks.</p>
+                <a href="#contact" class="service-link">Learn More <i class="ri-arrow-right-line"></i></a>
+            </div>
+
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="ri-smartphone-line"></i>
+                </div>
+                <h3>App Development</h3>
+                <p>Developing mobile applications with intuitive interfaces and smooth functionality.</p>
+                <a href="#contact" class="service-link">Learn More <i class="ri-arrow-right-line"></i></a>
+            </div>
+
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="ri-search-line"></i>
+                </div>
+                <h3>SEO Optimization</h3>
+                <p>Improving website visibility and rankings in search engine results.</p>
+                <a href="#contact" class="service-link">Learn More <i class="ri-arrow-right-line"></i></a>
+            </div>
+
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="ri-pencil-line"></i>
+                </div>
+                <h3>Content Writing</h3>
+                <p>Creating engaging and SEO-friendly content for websites and social media.</p>
+                <a href="#contact" class="service-link">Learn More <i class="ri-arrow-right-line"></i></a>
+            </div>
+
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="ri-briefcase-line"></i>
+                </div>
+                <h3>Freelancing</h3>
+                <p>Offering professional services on various freelancing platforms with quality delivery.</p>
+                <a href="#contact" class="service-link">Learn More <i class="ri-arrow-right-line"></i></a>
+            </div>
+
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="ri-computer-line"></i>
+                </div>
+                <h3>Hardware Services</h3>
+                <p>Professional repair and maintenance services for computers and laptops.</p>
+                <a href="#contact" class="service-link">Learn More <i class="ri-arrow-right-line"></i></a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
@@ -154,18 +327,18 @@
                     </div>
                     <!-- Add more contact info -->
                 </div>
-                <form class="contact-form" data-aos="fade-left">
+                <form class="contact-form" data-aos="fade-left" id="contactForm" onsubmit="return sendWhatsAppMessage(event)">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" id="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" required></textarea>
+                        <textarea id="message" placeholder="Your Message" required></textarea>
                     </div>
                     <button type="submit" class="primary-btn">Send Message</button>
-                </form>
+                </form>                
             </div>
         </div>
     </section>
