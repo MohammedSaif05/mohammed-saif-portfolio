@@ -1,9 +1,17 @@
 [[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+
+[[headers]]
   for = "/sitemap.xml"
   [headers.values]
     Content-Type = "application/xml"
     Access-Control-Allow-Origin = "*"
 
+# Redirect all requests to index.html for SPA
 [[redirects]]
   from = "/*"
   to = "/index.html"
